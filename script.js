@@ -16,10 +16,12 @@ const bgColor = "#131124";
 //  创建渲染器对象
 const renderer = new THREE.WebGLRenderer({
   antialias: true, //  是否执行抗锯齿。默认值为false。
+  alpha: true //透明背景
 });
 
 // 设置颜色及其透明度
-renderer.setClearColor(new THREE.Color(bgColor));
+// renderer.setClearColor(new THREE.Color(bgColor));
+
 
 // 将输 canvas 的大小调整为 (width, height) 并考虑设备像素比，且将视口从 (0, 0) 开始调整到适合大小
 renderer.setSize(window.innerWidth, window.innerHeight);
